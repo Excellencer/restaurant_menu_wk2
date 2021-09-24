@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.center {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

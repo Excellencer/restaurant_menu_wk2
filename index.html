@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Menu</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Hello world!</h1>
+    <table class="center">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Chicken dinner</td>
+        <td>6.35€</td>
+      </tr>
+      <tr>
+        <td>Omelette</td>
+        <td>4.45€</td>
+      </tr>
+      <tr>
+        <td>Soup</td>
+        <td>2.34€</td>
+      </tr>
+      <tr>
+        <td>Steak</td>
+        <td>12.53€</td>
+      </tr>
+      <tr>
+        <td>Day's special</td>
+        <td>20.00€</td>
+      </tr>
+    </table>
+    <div style="margin: auto; width: 70%;">
+      <h3 style="text-align: center;">Comment section</h3>
+      <form id="commentForm" class="center" style="width: 30%;">
+        Comment: <input id="commentInput" type="textarea" />
+        <input id="add-comment" type="button" value="Post" />
+      </form>
+      <div class="centerButton">
+        <button type="button" id="remove-comments">
+          Remove all comments
+        </button>
+      </div>
+
+      <ul id="commentList" class="center"></ul>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
