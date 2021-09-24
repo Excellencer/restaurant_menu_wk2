@@ -6,8 +6,10 @@
   </head>
 
   <body>
+    <div class="menu-layout">
     <h1>Hello world!</h1>
-    <table class="center">
+    <h2 class="header">Menu</h2>
+    <table id="menu-table" class="center">
       <tr>
         <th>Name</th>
         <th>Price</th>
@@ -33,20 +35,27 @@
         <td>20.00€</td>
       </tr>
     </table>
-    <div style="margin: auto; width: 70%;">
-      <h3 style="text-align: center;">Comment section</h3>
+    
+      <h2 class="header" >Reviews</h3>
+        <label for="rating">Give us a rating:</label>
+        <select name="rating" id="rating">
+          <option value="1">Excellent</option>
+          <option value="2">Great</option>
+          <option value="3">Good</option>
+          <option value="4">Above average</option>
+        </select>
       <form id="commentForm" class="center" style="width: 30%;">
         Comment: <input id="commentInput" type="textarea" />
         <input id="add-comment" type="button" value="Post" />
       </form>
       <div class="centerButton">
         <button type="button" id="remove-comments">
-          Remove all comments
+          Remove comments
         </button>
       </div>
 
       <ul id="commentList" class="center"></ul>
-    </div>
+  </div>
 
     <script src="src/index.js"></script>
   </body>
